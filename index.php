@@ -9,7 +9,11 @@
 <body>
 <?php 
 $txt = "PHP";
-echo "I love $txt";
+echo "I love $txt <br>";
+
+$x = 5;
+$y = 8;
+echo $x + $y;
 ?>
 </body>
 </html>
