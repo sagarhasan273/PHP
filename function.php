@@ -18,5 +18,15 @@ setHeight(80);
 
 function addNumbers(float $a, float $b) : float {
     return $a + $b;
-  }
-  echo addNumbers(1.2, 5.2);
+}
+
+echo addNumbers(1.2, 5.2);
+
+
+function add_five(&$value) { // & helps to pass variable as referance
+    $value += 5;
+}
+  
+$num = 2;
+add_five($num);
+echo $num;
