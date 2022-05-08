@@ -9,7 +9,11 @@
 <body>
 <?php
 $myfile = fopen("webdictionary.txt", "r") or die('<script>alert("Welcome to Geeks for Geeks")</script>');
-echo fread($myfile,filesize("webdictionary.txt"));
+// echo fread($myfile,filesize("webdictionary.txt"));
+do{
+    echo fgets($myfile,filesize("webdictionary.txt"))."<br>";
+}while(!feof($myfile));
+
 fclose($myfile);
 ?>
 </body>
